@@ -11,6 +11,9 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Pokedex",
   description: "Find your favourite Pokémons!",
+  icons: {
+    icon: "/images/favicon.ico",
+  },
 };
 
 export default function RootLayout({
