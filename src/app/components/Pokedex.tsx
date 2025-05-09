@@ -144,13 +144,13 @@ export const Pokedex = () => {
           <p className="text-zinc-400 font-semibold">{error}</p>
         </div>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-20 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-20 w-full">
         {!loading && pokemonList ? (
           pokemonList.map((pokemon) => (
             <PokemonCard key={pokemon.id} {...pokemon} />
           ))
         ) : (
-          <div className="w-full flex items-center justify-center opacity-50 col-span-1 md:col-span-2 lg:col-span-3">
+          <div className="w-full flex items-center justify-center opacity-50 col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-4">
             <Image
               src="/images/assets/pokeball-icon.svg"
               priority
